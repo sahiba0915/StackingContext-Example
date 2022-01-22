@@ -24,15 +24,36 @@ main {
   border-radius: 6px;
 }
 
-header {
-  position: relative;
+button {
+  top: -12px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+  padding: 8px;
+  background: cornflowerblue;
+  color: white;
+  box-shadow: 1px 2px 8px cornflowerblue;
+  border-radius: 6px;
 }
 
-.toast {
-  position: absolute;
+header {
+  position: relative;
+  z-index: 1;
 }
 
 main {
   position: relative;
   z-index: 2;
+}
+
+.toast {
+  position: absolute;
+  z-index: 2;
+}
+
+button {
+  position: absolute;
+  z-index: 1;
 }
